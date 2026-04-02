@@ -643,3 +643,33 @@ body.page-template-default .blog-grid-view-post .sidebar .widget .list-view-post
 	border: 0px solid transparent;
 	background-color: transparent;
 }
+
+/*--------------------------------------------------------------
+=>> Custom Running Horse Animation
+--------------------------------------------------------------*/
+.running-horse-wrapper {
+	width: 100%;
+	overflow: hidden;
+	background: #ffffff; /* Or any background color */
+	color: #fff;
+	padding: 5px 0;
+	position: relative;
+	white-space: nowrap;
+    border-bottom: 2px solid #012761;
+}
+
+.running-horse-animation {
+	display: inline-block;
+	font-size: 24px;
+	animation: run-horse 10s linear infinite;
+    transform: translateX(100vw);
+}
+
+@keyframes run-horse {
+	0% {
+		transform: translateX(100vw);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
