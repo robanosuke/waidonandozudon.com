@@ -1,0 +1,50 @@
+/*
+ Theme Name: Newsexo Child
+ Template:   newsexo
+*/
+
+/*--------------------------------------------------------------
+=>> Custom Running Horse Animation
+--------------------------------------------------------------*/
+.running-horse-wrapper {
+	width: 100%;
+	overflow: hidden;
+	background: #ffffff; /* Or any background color */
+	color: #fff;
+	padding: 5px 0;
+	position: relative;
+	white-space: nowrap;
+    border-bottom: 2px solid #012761;
+}
+
+.running-horse-animation {
+	display: inline-block;
+	font-size: 24px;
+	animation: run-horse 10s linear infinite;
+    transform: translateX(100vw);
+}
+
+@keyframes run-horse {
+	0% {
+		transform: translateX(100vw);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+/*--------------------------------------------------------------
+=>> Site Title One-Line Fix
+--------------------------------------------------------------*/
+.site-branding .site-title, 
+.site-branding .site-title a {
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+/* Prevent overflow on small screens by reducing font size */
+@media (max-width: 991px) {
+    .site-branding .site-title a {
+        font-size: clamp(1rem, 4vw, 2rem) !important;
+    }
+}

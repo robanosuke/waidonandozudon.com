@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 120" preserveAspectRatio="xMinYMid meet">
+    <defs>
+        <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#012761" />
+            <stop offset="100%" stop-color="#0a5c36" />
+        </linearGradient>
+        <linearGradient id="speedGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="rgba(10, 92, 54, 0)" />
+            <stop offset="100%" stop-color="rgba(10, 92, 54, 0.8)" />
+        </linearGradient>
+        <filter id="shadow">
+            <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.15"/>
+        </filter>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700;900&amp;display=swap');
+            .title-main { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 50px; fill: url(#textGrad); filter: url(#shadow); }
+            .title-sub { font-family: 'Noto Sans JP', sans-serif; font-weight: 900; font-size: 46px; fill: #222; letter-spacing: 2px; }
+        </style>
+    </defs>
+    
+    <!-- Speed/Wind effect lines representing horse racing Top Left -->
+    <path d="M 10,25 L 120,25 M 130,25 L 150,25" stroke="#0a5c36" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Main Text -->
+    <text x="10" y="85" class="title-main">ワイドンとオッズの</text>
+    
+    <!-- Slanted subtitle with speed feel -->
+    <g transform="translate(480, 85) skewX(-15)">
+        <!-- Horizontal motion trails to add sense of speed behind text -->
+        <path d="M -40,-35 L -10,-35 M -60,-20 L -5,-20 M -35,-5 L 15,-5" stroke="url(#speedGrad)" stroke-width="3" stroke-linecap="round" />
+        <text x="0" y="0" class="title-sub" font-style="italic">競馬競走局</text>
+    </g>
+    
+    <!-- Bottom line -->
+    <path d="M 465,105 L 750,105" stroke="#012761" stroke-width="5" stroke-linecap="round" />
+</svg>
