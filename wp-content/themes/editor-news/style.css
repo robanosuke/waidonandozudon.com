@@ -1,0 +1,645 @@
+/*
+Theme Name: Editor News
+Theme URI: https://themearile.com/editor-news-theme/
+Template: newsexo
+Author: ThemeArile
+Author URI: https://themearile.com
+Description: Editor News is a professional and modern WordPress theme that is perfect for any Blog/Magazine, news, and even for all variants of publishers' websites. It has a unique design for a visually stunning layout that makes your content display beautifully and easy to read on any media device. Even though it is user-friendly, SEO-ready, effortless, lightweight, and optimized for top performance and Core Web Vitals. The theme is best suited for news, newspapers, magazines, publishers, editors, news portals, personal blogs, dynamic news, business blogs, news editorials, guides, journalism, lifestyle blogs, travel blogs, niche blogs, food blogs, fashion magazines, beauty blogs, affiliate blogs, multimedia blogs, guest blogging, and review websites. It also has flexible and versatile layouts, enough for essential needs, with unlimited colors, unlimited Google fonts, typography, responsive design, and RTL language support. It is designed to be highly SEO-friendly, which can help optimize your website's search engine performance, making it easier to find for potential visitors, and the theme provides predefined beautiful demos that can be imported with one click in less time. Editor News also supports popular free and premium WordPress plugins such as Elementor, Yoast SEO, WooCommerce, Gutenberg, Contact Form 7, Jetpack, Google Analytics, and much more. Check the demo of Editor News Pro https://newsexo-pro-ten.themearile.com/.
+Version: 2.1
+Tested up to: 6.8
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: editor-news
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets, post-formats, theme-options, threaded-comments, rtl-language-support, translation-ready, full-width-template, custom-logo, blog, e-commerce, portfolio
+*/
+
+/*--------------------------------------------------
+=>> Body Custom Background Css
+--------------------------------------------------*/
+
+body.custom-background .theme-bg-dark,
+body.custom-background .theme-bg-default, 
+body.custom-background .theme-blog.theme-bg-grey {
+    background-color: transparent !important;
+}
+
+/*--------------------------------------------------
+=>> Wrapper Background Css
+--------------------------------------------------*/
+
+#wrapper {
+    background-color: #f0f1f3;
+}
+
+/*--------------------------------------------------
+=>> Typography Css
+--------------------------------------------------*/
+
+h3 {
+    font-weight: 900 !important;
+}
+
+/*--------------------------------------------------------------
+=>> Site Header
+--------------------------------------------------------------*/
+
+.site-header {
+    background: #012761 !important;
+}
+.head-contact-info li, .site-header .custom-social-icons .followus {
+    color: #ffffff !important;
+}
+.custom-social-icons .followus:before, .custom-social-icons .followus:after {
+    background: #ffffff !important;
+}
+.site-header .custom-social-icons li > a {
+    color: #ffffff !important;
+}
+
+/*--------------------------------------------------------------
+=>> Site Branding & Advertisement
+--------------------------------------------------------------*/
+
+.site-branding .site-title a, 
+.site-branding .site-description {
+	color: #fff;
+}
+.site-branding .site-title a:hover, 
+.site-branding .site-title a:focus, 
+.site-branding .site-description:hover, 
+.site-branding .site-description:focus {
+	color: #fff;
+}
+.logo-banner-overlay::before {
+    background: #013079 !important;
+}
+
+/*--------------------------------------------------------------
+=>> Trending News Section
+--------------------------------------------------------------*/
+
+.trending-news-col h6 {
+    color: #012761;
+}
+
+/*--------------------------------------------------------------
+=>> Big News Section - Featured News
+--------------------------------------------------------------*/
+
+/*Blog Overlay Layout Five*/
+.big-news-section .overlay-news-area.vrsn-five {
+	background-color: #fff;
+	padding: 0.625rem;
+	border-radius: 25px;
+    border-bottom: 5px solid #012761 !important;
+    border: 2px solid #012761;
+	position: relative;
+}
+.big-news-section .overlay-news-area.vrsn-five .post-thumbnail {
+	border-radius: 20px;
+}
+.big-news-section .overlay-news-area.vrsn-five .post-thumbnail:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(1, 39, 97, 0.15);
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.big-news-section .overlay-news-area.vrsn-five .post-thumbnail:hover:after {
+	height: 250%;
+	transition: all 800ms linear;
+	background-color: transparent;
+}
+.big-news-section .overlay-news-area.vrsn-five img {
+	width: 100%;
+	-webkit-transform: scale(1) rotate(0deg);
+	-moz-transform: scale(1) rotate(0deg);
+	-ms-transform: scale(1) rotate(0deg);
+	transform: scale(1) rotate(0deg);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;	
+}
+.big-news-section .overlay-news-area.vrsn-five:hover img {
+	-webkit-transform: scale(1.1) rotate(2deg);
+    -moz-transform: scale(1.1) rotate(2deg);
+    -ms-transform: scale(1.1) rotate(2deg);
+    transform: scale(1.1) rotate(2deg);
+}
+/*End of vrsn-five*/
+
+/*--------------------------------------------------------------
+=>> Featured News Section
+--------------------------------------------------------------*/
+
+/*Blog Overlay Layout Five*/
+.featured-news-section .overlay-news-area.vrsn-five {
+	background-color: #fff;
+	padding: 0.625rem;
+	border-radius: 25px;
+    border-bottom: 5px solid #012761 !important;
+    border: 2px solid #012761;
+	position: relative;
+}
+.featured-news-section .overlay-news-area.vrsn-five .post-thumbnail {
+	border-radius: 20px;
+}
+.featured-news-section .overlay-news-area.vrsn-five .post-thumbnail:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(1, 39, 97, 0.15);
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.featured-news-section .overlay-news-area.vrsn-five .post-thumbnail:hover:after {
+	height: 250%;
+	transition: all 800ms linear;
+	background-color: transparent;
+}
+.featured-news-section .overlay-news-area.vrsn-five img {
+	width: 100%;
+	-webkit-transform: scale(1) rotate(0deg);
+	-moz-transform: scale(1) rotate(0deg);
+	-ms-transform: scale(1) rotate(0deg);
+	transform: scale(1) rotate(0deg);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;	
+}
+.featured-news-section .overlay-news-area.vrsn-five:hover img {
+	-webkit-transform: scale(1.1) rotate(2deg);
+    -moz-transform: scale(1.1) rotate(2deg);
+    -ms-transform: scale(1.1) rotate(2deg);
+    transform: scale(1.1) rotate(2deg);
+}
+/*End of vrsn-five*/
+
+/*--------------------------------------------------------------
+=>> Grid View News Section
+--------------------------------------------------------------*/
+
+/*Blog Grid Layout Five*/
+.grid-view-news-area.vrsn-five {
+	background-color: #fff;
+	padding: 1.25rem;
+	border-radius: 25px;
+	border-bottom: 5px solid #012761 !important;
+    border: 2px solid #012761;
+	position: relative;	
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}
+.grid-view-news-area.vrsn-five:hover {
+	transform: translateY(-3px);
+	transition: 0.4s;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.grid-view-news-area.vrsn-five .post-thumbnail {
+	border-radius: 20px;
+}
+.grid-view-news-area.vrsn-five .post-thumbnail:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(1, 39, 97, 0.15);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+.grid-view-news-area.vrsn-five .post-thumbnail:hover:after {
+	height: 250%;
+	transition: all 800ms linear;
+	background-color: transparent;
+}
+.grid-view-news-area.vrsn-five .post-thumbnail img {
+	width: 100%;
+	-webkit-transform: scale(1) rotate(0deg);
+	-moz-transform: scale(1) rotate(0deg);
+	-ms-transform: scale(1) rotate(0deg);
+	transform: scale(1) rotate(0deg);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;	
+}
+.grid-view-news-area.vrsn-five .post-thumbnail:hover img {
+	-webkit-transform: scale(1.1) rotate(2deg);
+    -moz-transform: scale(1.1) rotate(2deg);
+    -ms-transform: scale(1.1) rotate(2deg);
+    transform: scale(1.1) rotate(2deg);
+}
+.frontpage-content .col-lg-3 .grid-view-news-area.vrsn-five {
+    padding: 0.938rem;
+}
+.grid-view-news-area.vrsn-five .entry-header .entry-title a {
+	color: #012761;
+}
+
+/*--------------------------------------------------------------
+=>> List View News Section
+--------------------------------------------------------------*/
+
+/*Blog List Layout Five*/
+.list-view-news-area .post.vrsn-five {
+	background-color: #fff;
+	padding: 1.25rem;
+	border-radius: 25px;
+	border-bottom: 5px solid #012761 !important;
+    border: 2px solid #012761;
+	position: relative;	
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}
+.list-view-news-area .post.vrsn-five:hover {
+	transform: translateY(-3px);
+	transition: 0.4s;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.list-view-news-area .post.vrsn-five .post-thumbnail {
+	border-radius: 20px;
+}
+.list-view-news-area .post.vrsn-five .post-thumbnail:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(1, 39, 97, 0.15);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+.list-view-news-area .post.vrsn-five .post-thumbnail:hover:after {
+	height: 250%;
+	transition: all 800ms linear;
+	background-color: transparent;
+}
+.list-view-news-area .post.vrsn-five .post-thumbnail img {
+	width: 100%;
+	-webkit-transform: scale(1) rotate(0deg);
+	-moz-transform: scale(1) rotate(0deg);
+	-ms-transform: scale(1) rotate(0deg);
+	transform: scale(1) rotate(0deg);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;	
+}
+.list-view-news-area .post.vrsn-five .post-thumbnail:hover img {
+	-webkit-transform: scale(1.1) rotate(2deg);
+    -moz-transform: scale(1.1) rotate(2deg);
+    -ms-transform: scale(1.1) rotate(2deg);
+    transform: scale(1.1) rotate(2deg);
+}
+.list-view-news-area .vrsn-five .entry-header .entry-title a {
+	color: #012761;
+}
+
+/*--------------------------------------------------------------
+=>> Sponsors Section
+--------------------------------------------------------------*/
+
+.sponsored-news-section .grid-view-news-area.vrsn-four:hover, 
+.sponsored-news-section .grid-view-news-area.vrsn-five:hover {
+	transform: translateY(0px);
+}
+
+/*--------------------------------------------------------------
+=>> Section Header
+--------------------------------------------------------------*/
+
+.featured-news-section .news-section-title .f-heading {
+    background-color: #012761;
+}
+.featured-news-section .news-section-title .f-heading:before {
+    border-left: 15px solid #012761;
+}
+.widget .col-12 .news-section-title .f-heading {
+    background-color: #012761 !important;
+}
+.widget .col-12 .news-section-title .f-heading:before {
+    border-left: 15px solid #012761 !important;
+}
+.sponsored-news-section .news-section-title .f-heading {
+    background-color: #012761;
+}
+.sponsored-news-section .news-section-title .f-heading:before {
+    border-left: 15px solid #012761;
+}
+
+/*--------------------------------------------------------------
+=>> Blog Meta
+--------------------------------------------------------------*/
+
+.entry-meta > span { 
+	margin: 0 0.875rem 0 0 !important;
+}
+.entry-meta > span i {
+    margin-right: 0.350rem;
+}
+.entry-meta .avatar-default {
+    margin-right: 0.350rem;
+}
+/*Category Colors*/
+.entry-meta .cat-links .links-bg:nth-child(2) {
+	background: #012761;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(3) {
+	background: #012761;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(4) {
+	background: #012761;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(5) {
+	background: #012761;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(6) {
+	background: #012761;
+	color: #fff;
+}
+/*Pagination*/
+.navigation.pagination .nav-links .page-numbers, 
+.navigation.pagination .nav-links a {
+	border: 1px solid #ebebeb;
+}
+.pagination a {
+	background-color: #fff;
+}
+/*Category Layout Five*/
+.post.vrsn-five .entry-meta .cat-links .links-bg, 
+.post.vrsn-five .entry-meta .cat-links .links-bg > span {
+	transform: skew(0deg);
+}
+.post.vrsn-five .entry-meta .cat-links .links-bg {
+	clip-path: polygon(0 0, 100% 0%, 92% 95%, 0% 100%);
+    padding-right: 0.938rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 10px;
+	-webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}  
+.post.vrsn-five .entry-meta .cat-links.links-space {
+    padding: 0;
+}
+
+/*--------------------------------------------------------------
+=>> Blog Single
+--------------------------------------------------------------*/
+
+.single-news-area .grid-view-news-area.vrsn-five .entry-header .entry-title, 
+.single-news-area .grid-view-news-area.vrsn-five .post-content h1, 
+.single-news-area .grid-view-news-area.vrsn-five .post-content h2, 
+.single-news-area .grid-view-news-area.vrsn-five .post-content h3, 
+.single-news-area .grid-view-news-area.vrsn-five .post-content h4, 
+.single-news-area .grid-view-news-area.vrsn-five .post-content h5, 
+.single-news-area .grid-view-news-area.vrsn-five .post-content h6, 
+.single-news-area .grid-view-news-area.vrsn-five .post-content blockquote, 
+.single-news-area .grid-view-news-area.vrsn-five .post-content table th {
+	color: #012761;
+}
+.post-author-area.vrsn-five {
+	background-color: #fff;
+	padding: 1.25rem;
+	border-radius: 25px;
+	border-bottom: 5px solid #012761 !important;
+    border: 2px solid #012761;
+	position: relative;	
+    transition: 0.4s;
+}
+.post-author-area.vrsn-five:hover {
+	transform: translateY(-3px);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+/*Related Posts*/
+.related-posts .grid-view-news-area.vrsn-five .post-content .entry-meta:nth-child(3) {
+    margin-bottom: 0; 
+}
+/*Comments*/
+.theme-comment-area.vrsn-five {
+	background-color: #fff;
+	padding: 1.25rem;
+	border-radius: 25px;
+	border-bottom: 5px solid #012761 !important;
+    border: 2px solid #012761;
+	position: relative;	
+    transition: 0.4s;
+}
+.theme-comment-area.vrsn-five:hover {
+	transform: translateY(-3px);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+/*Comment Form*/
+.theme-comment-form.vrsn-five .comment-form {
+	background-color: #fff;
+	padding: 1.25rem;
+	border-radius: 25px;
+	border-bottom: 5px solid #012761 !important;
+    border: 2px solid #012761;
+	position: relative;	
+    transition: 0.4s;
+}
+.theme-comment-form.vrsn-five .comment-form:hover {
+	transform: translateY(-3px);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/*--------------------------------------------------------------
+=>> Sidebar Widgets
+--------------------------------------------------------------*/
+
+.sidebar.vrsn-five .widget {
+	background-color: #fff;
+	padding: 1.25rem;
+	border-radius: 25px;
+	border-bottom: 5px solid #012761 !important;
+    border: 2px solid #012761;
+	position: relative;
+	box-shadow: 2px 5px 20px rgb(0 0 0 / 7%);
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}
+.sidebar.vrsn-five .widget:hover {
+	transform: translateY(-3px);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+/*Widget Title*/
+.sidebar.vrsn-five .widget .wp-block-heading, 
+.sidebar.vrsn-five .widget .f-heading {
+	color: #fff;
+}
+/*Latest Posts Widget*/
+.sidebar.vrsn-five .wp-block-latest-posts li a {
+	color: #012761;
+}
+/*List View Post Widget*/
+.list-view-post-widget .vrsn-five .entry-header .entry-title a {
+	color: #012761;
+}
+.list-view-post-widget .post.vrsn-five .post-thumbnail {
+    border-radius: 20px;
+}
+/*Mixed Widget for All Sidebar*/
+.sidebar.vrsn-five .wp-block-archives-list li a,
+.sidebar.vrsn-five .wp-block-categories-list li a,
+.sidebar.vrsn-five .wp-block-page-list li a, 
+.sidebar.vrsn-five .widget_meta ul li a, 
+.sidebar.vrsn-five .wp-block-latest-comments li a, 
+.sidebar.vrsn-five .wp-block-rss li a {
+	color: #012761;
+}
+.sidebar.vrsn-five .widget h1, 
+.sidebar.vrsn-five .widget h2, 
+.sidebar.vrsn-five .widget h3, 
+.sidebar.vrsn-five .widget h4, 
+.sidebar.vrsn-five .widget h5, 
+.sidebar.vrsn-five .widget h6 {
+	color: #012761;
+}
+
+.sidebar .widget .wp-block-heading {
+    background-color: #012761;
+}
+.sidebar .widget .wp-block-heading:before {
+    border-left: 15px solid #012761;
+}
+
+/*--------------------------------------------------------------
+=>> Theme Breadcrumb Area
+--------------------------------------------------------------*/
+
+#wrapper .page-breadcrumb { 
+	background-color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+=>> Footer Section & Widgets
+--------------------------------------------------------------*/
+
+.site-footer-overlay::before {
+    background: #012761;
+}
+.footer-sidebar .widget .wp-block-read-more {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    outline: none;
+}
+.footer-sidebar .widget .wp-block-read-more:hover, 
+.footer-sidebar .widget .wp-block-read-more:focus {
+    text-decoration-style: dotted;
+}
+.footer-sidebar .widget ul li a {
+	color: #e0e0e0;
+}
+
+/*--------------------------------------------------------------
+=>> Default Page Templates 
+--------------------------------------------------------------*/
+
+body.page-template-default .blog-grid-view-post .post.vrsn-five {
+	background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 25px;
+    border-bottom: 5px solid #012761 !important;
+    border: 2px solid #012761;
+    position: relative;
+    transition: 0.4s;
+}
+body.page-template-default .blog-grid-view-post .sidebar .widget .list-view-post-widget .post {
+	border-top: none;
+	border-bottom: 1px solid #f1f1f1;
+    border-left: none;
+    border-right: none;
+	padding: 0.938rem 0 0.938rem 0;
+}
+body.page-template-default .blog-grid-view-post .sidebar .widget .list-view-post-widget .post:first-child {
+    padding-top: 0;
+	margin-bottom: 0;
+}
+body.page-template-default .blog-grid-view-post .sidebar .widget .list-view-post-widget .post:last-child {
+    padding-bottom: 0;
+	border-bottom: none;
+}
+
+/*--------------------------------------------------------------
+=>> Sidebar Update Released 
+--------------------------------------------------------------*/
+
+.wp-block-latest-posts li {
+    padding-bottom: 1rem;
+}
+.wp-block-latest-posts li .wp-block-latest-posts__post-date {
+    padding-top: 0.525rem;
+}
+.wp-block-archives li {
+	padding-bottom: 0.625rem;
+}
+.post .wp-block-categories-list li {
+	padding-bottom: 0.625rem;
+}
+.post .wp-block-list li {
+	padding-bottom: 0.625rem;
+}
+.post .wp-block-list li ul li:first-child {
+	padding-top: 0.625rem;
+}
+.post .wp-block-list li:last-child, 
+.post .wp-block-list li ul li:last-child {
+	padding-bottom: 0;
+}
+.wp-block-file .wp-block-file__button {
+	text-decoration: none;
+}
+.post .wp-block-file {
+    font-size: 1rem;
+}
+.widget .wp-block-heading a {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+.sidebar .widget .wp-block-accordion-heading__toggle-title, 
+.sidebar .widget .wp-block-accordion-heading__toggle-icon {
+    display: flex;
+    border: 0 none;
+    margin: 0;
+}
+.sidebar .widget .wp-block-accordion-heading .wp-block-accordion-heading__toggle:hover,
+.sidebar .widget .wp-block-accordion-heading .wp-block-accordion-heading__toggle:focus {
+	border: 0px solid transparent;
+	background-color: transparent;
+}
+
+/*--------------------------------------------------------------
+=>> Footer Sidebar Update Released 
+--------------------------------------------------------------*/
+
+.footer-sidebar .widget .wp-block-accordion-heading__toggle-title, 
+.footer-sidebar .widget .wp-block-accordion-heading__toggle-icon {
+    display: flex;
+    border: 0 none;
+    margin: 0;
+}
+.footer-sidebar .widget .wp-block-accordion-heading .wp-block-accordion-heading__toggle:hover, 
+.footer-sidebar .widget .wp-block-accordion-heading .wp-block-accordion-heading__toggle:focus {
+	border: 0px solid transparent;
+	background-color: transparent;
+}

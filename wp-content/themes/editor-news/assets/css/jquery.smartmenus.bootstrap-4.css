@@ -1,0 +1,32 @@
+/*
+Theme Name: Newsio
+Author: ThemeArile 
+Copyright (c) 2024 Newsio
+http://www.themearile.com
+Name: jquery.smartmenus.bootstrap-4.css
+*/
+
+/* Carets in collapsible mode (make them look like +/- buttons) */
+
+.navbar-dark {
+    border-top: 1px solid #012761;
+	background-color: #012761;
+}
+@media (min-width: 992px) {
+    .navbar.navbar-dark .nav .dropdown-menu {
+        background-color: #012761;
+        box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+    }
+}
+.navbar.navbar-dark .nav .menu-item .nav-link {
+    font-size: 1.2rem;
+}
+.navbar.navbar-dark .nav .menu-item .nav-link {
+    font-family: Alegreya;
+}
+.navbar .nav .menu-item .dropdown-item {
+	font-family: Alegreya;
+}
+.navbar.navbar-dark .nav .menu-item .nav-link {
+    font-weight: 700;
+}
